@@ -32,7 +32,7 @@ To get started with the project, the following tools and libraries are required:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/solar-panel-detection.git
+   git clone https://github.com/VishuKalier2003/Renewable-Solar-Energy-Estimation-using-Satellite-Images
    ```
 
 2. Create Virtual Envirnment:
