@@ -1,5 +1,6 @@
 from PIL import Image
 import numpy as np
+import os
 
 def adjust_image(input_path, output_path, red=1.0, green=1.0, blue=1.0, brightness=1.0):
     """
@@ -42,14 +43,26 @@ def adjust_image(input_path, output_path, red=1.0, green=1.0, blue=1.0, brightne
     output_img.save(output_path)
 
 
-# Usage
-input_image = "data\input_images\Screenshot 2024-09-18 162247.png"
-output_image = "data\output_blue_images\Blue.png"
+# Define the input and output folders
+input_folder = "data/input_images"
+output_folder = "data/output_blue_images"
 
-# Adjust the values below as needed
-adjust_image(input_image, output_image, 
-             red=0.1,        # Reduce red channel to 50%
-             green=0.6,      # Reduce green channel to 70%
-             blue=1.0,       # Keep blue channel at 100%
-             brightness=0.5  # Increase overall brightness by 20%
-            )
+# Define the color adjustments
+red = 0.1
+green = 0.6
+blue = 1.0
+brightness = 0.5
+
+# Iterate over the files in the input folder
+for filename in os.listdir(input_folder):
+    # Check if the file is an image
+    if filename.endswith(".png") or filename.endswith(".jpg"):
+        # Read the image
+        input_path = os.path.join(input_folder, filename)
+        output_filename = filename.split('.')[0] + "_blue.png"
+        output_path = os.path.join(output_folder, output_filename)
+
+        # Apply the color adjustments
+        adjust_image(input_path, output_path, red, green, blue, brightness)
+
+        print(f"Processed {filename} and saved as {output_filename}")
