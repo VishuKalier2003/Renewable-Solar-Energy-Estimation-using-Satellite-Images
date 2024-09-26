@@ -25,7 +25,7 @@ To get started with the project, the following tools and libraries are required:
 - Roboflow (for dataset management)
 - OpenCV (for image handling)
 - NumPy, Pandas (for data manipulation)
-- Matplotlib (for visualization)
+- Matplotlib and PIL(for visualization)
 
 ### Installation
 
@@ -110,6 +110,6 @@ At later stages we plan to create an Streamline the process via GUI interface.
 
 Project is colectivelt developed by:
 
-- **Virat Srivastava**: (add github, linkedin and contribution)
-- **Vishu Kalier**:
-- **Durgesh Kumar Singh**:
+- **Virat Srivastava**
+- **Vishu Kalier**
+- **Durgesh Kumar Singh**
