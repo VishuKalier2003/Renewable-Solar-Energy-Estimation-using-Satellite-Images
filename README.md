@@ -110,6 +110,6 @@ At later stages we plan to create an Streamline the process via GUI interface.
 
 Project is colectivelt developed by:
 
-- **Virat Srivastava**: (add github, linkedin and contribution)
-- **Vishu Kalier**:
-- **Durgesh Kumar Singh**:
+- **Virat Srivastava**
+- **Vishu Kalier**
+- **Durgesh Kumar Singh**
