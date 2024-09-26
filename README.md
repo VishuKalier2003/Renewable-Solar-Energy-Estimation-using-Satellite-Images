@@ -25,7 +25,7 @@ To get started with the project, the following tools and libraries are required:
 - Roboflow (for dataset management)
 - OpenCV (for image handling)
 - NumPy, Pandas (for data manipulation)
-- Matplotlib (for visualization)
+- Matplotlib and PIL(for visualization)
 
 ### Installation
 
