@@ -1,6 +1,6 @@
 # structure of a GoogleNet (Inception V3) model
 import tensorflow as tf
-from tensorflow.keras import layers, Model, Input
+from tensorflow.keras import layers, Model, Input # type: ignore
 
 # Inception Module
 def inception_module(x, f1, f3_r, f3, f5_r, f5, fpool):
