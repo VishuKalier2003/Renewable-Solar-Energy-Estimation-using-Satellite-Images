@@ -20,7 +20,7 @@ class ImageProcessorApp(ttk.Window):
         self.create_widgets()
 
     def create_widgets(self):
-        # Main frame
+        # Main fram
         main_frame = ttk.Frame(self)
         main_frame.pack(fill=BOTH, expand=YES, padx=10, pady=10)
 
