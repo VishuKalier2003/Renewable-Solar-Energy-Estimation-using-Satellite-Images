@@ -70,8 +70,8 @@ def DenseNet(input_shape, num_classes, num_dense_blocks=4, num_layers_per_block=
     return model
 
 # Define model parameters
-input_shape = (224, 224, 3)  # ImageNet-like input shape (224x224 RGB images)
-num_classes = 3  # Number of output classes (e.g., solar panels, Shade, Roof.)
+input_shape = (640, 640, 3)  # ImageNet-like input shape (224x224 RGB images)
+num_classes = 1  # Number of output classes (e.g., solar panels, Shade, Roof.)
 growth_rate = 12  # Growth rate of feature maps in each dense block
 compression_factor = 0.5  # Compression factor for the transition layers
 num_dense_blocks = 4  # Number of dense blocks
