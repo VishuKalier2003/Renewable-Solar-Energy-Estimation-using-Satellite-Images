@@ -78,7 +78,7 @@ def yolo_loss(y_true, y_pred):
 
 
 # Define model parameters
-input_shape = (416, 416, 3)  # YOLO typically uses 416x416 images
+input_shape = (640, 640, 3)  # YOLO typically uses 416x416 images
 num_classes = 6  # Number of object classes
 num_anchors = 5  # Number of anchor boxes
 
